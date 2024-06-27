@@ -55,14 +55,20 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
         text-decoration: underline;
     }
 
-    // 位置
-    &.-right{text-align: right;}
-    &.-left{text-align: left;}
-    &.-center{text-align: center;}
+    // ----- 位置関係 -----
+    // 横_位置
+    &.-right  {text-align: right;}
+    &.-left   {text-align: left;}
+    &.-center {text-align: center;}
+    // 縦_位置
+    &.-top    {vertical-align: top;}
+    &.-bottom {vertical-align: bottom;}
+    &.-middle {vertical-align: middle;}
 
     // 行間
     &.-lh-n    {line-height: normal;}
 	&.-lh-1    {line-height: 1;}
+    &.-lh-1_3  {line-height: 1.3;}
 	&.-lh-1_5  {line-height: 1.5;}
     &.-lh-1_8  {line-height: 1.8;}
     &.-lh-2    {line-height: 2;}
@@ -83,6 +89,13 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
     &.-ls-3{letter-spacing: .3rem;}
     &.-ls-4{letter-spacing: .4rem;}
     &.-ls-5{letter-spacing: .5rem;}
+
+    &.-ls-n_s {@include max(768){ letter-spacing: normal;}}
+	&.-ls-1_s {@include max(768){ letter-spacing: .1rem; }}
+    &.-ls-2_s {@include max(768){ letter-spacing: .2rem; }}
+	&.-ls-3_s {@include max(768){ letter-spacing: .3rem; }}
+    &.-ls-4_s {@include max(768){ letter-spacing: .4rem; }}
+    &.-ls-5_s {@include max(768){ letter-spacing: .5rem; }}
 
     // 影
     &.-shadow{filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.637)) !important;}
@@ -114,6 +127,8 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
 
     // 色
     &.-white{color: $main-color--w !important;}
+    &.-black{color: $main-color--b !important;}
+
     &.-color01{color: $site-color01 !important;}
     &.-color02{color: $site-color02 !important;}
     &.-color03{color: $site-color03 !important;}
