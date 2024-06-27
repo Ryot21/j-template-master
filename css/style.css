@@ -1,0 +1,11 @@
+.km-container.shop_detail.-maeda .jk-detail_recommendInner .Ranking-none {
+  display: none;
+}
+.km-container.shop_detail.-maeda .jk-detail_recommendInner .jk-list3Line_ttl {
+  height: 37px !important;
+}
+@media (width >= 768px) {
+  .km-container.shop_detail.-maeda .jk-detail_recommendInner .jk-list3Line_ttl {
+    height: 24px !important;
+  }
+}/*# sourceMappingURL=style.css.map */
