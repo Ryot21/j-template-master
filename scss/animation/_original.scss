@@ -7,7 +7,7 @@
         fade + ぼかし
     ------------------------------------------------*/
     &-fade-blur{
-        // overflow: hidden;
+        overflow: hidden;
         img{animation: fview-fadeIn 1s both;}
         @keyframes fview-fadeIn {
             0% {
@@ -25,51 +25,10 @@
 
     /* ---------------------------------
         ファーストビュー > 画像縮小, 拡大
+
+        → _slider.scssに移動
     --------------------------------- */
-    &-fviewOutImg{
-        overflow: hidden;
-        transition: 4s all;
-        img{
-            animation-name: ZoomOut;
-            animation-fill-mode:forwards;
-        }
-        @keyframes ZoomOut{
-            0% {
-                transform: scale(1);
-                opacity: 1;
-            }
-            50% {
-                transform: scale(.85);
-                opacity: .85;
-            }
-            100% {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-    }
-    &-fviewInImg{
-        overflow: hidden;
-        transition: 4s all;
-        img{
-            animation-name: ZoomIn;
-            animation-fill-mode:forwards;
-        }
-        @keyframes ZoomIn{
-            0% {
-                transform: scale(.85);
-                opacity: .85;
-            }
-            50% {
-                transform: scale(1);
-                opacity: 1;
-            }
-            100% {
-                transform: scale(.85);
-                opacity: .85;
-            }
-        }
-    }
+
     /* ---------------------------------------
         鳥の着地または飛び立つ動き
     --------------------------------------- */
@@ -159,7 +118,6 @@
             100% { transform: scale(1, .9)   translate(0%, 0%); }
         }
     }
-
 }
 
 

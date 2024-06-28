@@ -55,27 +55,26 @@
             // top: 0;
         }
         .swiper-slide{
-            .imgBox img {transition: 3s all;}
+            .imgBox img,
+            .zoomIn,
+            .zoomOut {transition: 5s all;}
+            .fadeLeft,
+            .fadeRight{transition: 5s all;}
+
             &-active{//アクティブ時のアクション
-                .zoom img {transform: scale(1.05);}
 
-                // .bg-img{
-                //     &.-item01{
-                //         width: 100%;
-                //         height: 100%;
-                //         background-image: url(../images/slider/f-view02_tb.png);
-                //         background-size: cover;
-                //         background-repeat: no-repeat;
-                //     }
-                // }
-
-                .-f-bird_01,
-                .-f-bird_02,
-                .-f-bird_03,
-                .-f-bird_04,
-                .-f-border{
-
+                .zoomIn {// 徐々に『拡大』される
+                    transform: scale(1.1);
+                    @include min(768){
+                        transform: scale(1.03);
+                    }
                 }
+                .zoomOut{// 徐々に『縮小』される
+                    transform: scale(0.95);
+                    @include min(768){transform: scale(0.97);}
+                }
+                .fadeLeft {transform: translateX(-10%);}// 徐々に『左』に進む
+                .fadeRight{transform: translateX(10%);}// 徐々に『右』に進む
             }
         }
     }

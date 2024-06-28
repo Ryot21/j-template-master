@@ -6016,11 +6016,36 @@ a {
   transform: scale(1.05);
   opacity: 1;
 }
-.swiper.swiper-Fview .swiper-slide .imgBox img {
-  transition: 3s all;
+.swiper.swiper-Fview .swiper-slide .imgBox img,
+.swiper.swiper-Fview .swiper-slide .zoomIn,
+.swiper.swiper-Fview .swiper-slide .zoomOut {
+  transition: 5s all;
 }
-.swiper.swiper-Fview .swiper-slide-active .zoom img {
-  transform: scale(1.05);
+.swiper.swiper-Fview .swiper-slide .fadeLeft,
+.swiper.swiper-Fview .swiper-slide .fadeRight {
+  transition: 5s all;
+}
+.swiper.swiper-Fview .swiper-slide-active .zoomIn {
+  transform: scale(1.1);
+}
+@media (width >= 768px) {
+  .swiper.swiper-Fview .swiper-slide-active .zoomIn {
+    transform: scale(1.03);
+  }
+}
+.swiper.swiper-Fview .swiper-slide-active .zoomOut {
+  transform: scale(0.95);
+}
+@media (width >= 768px) {
+  .swiper.swiper-Fview .swiper-slide-active .zoomOut {
+    transform: scale(0.97);
+  }
+}
+.swiper.swiper-Fview .swiper-slide-active .fadeLeft {
+  transform: translateX(-10%);
+}
+.swiper.swiper-Fview .swiper-slide-active .fadeRight {
+  transform: translateX(10%);
 }
 @media (768px >= width) {
   .swiper.swiperMain .swiper-slide {
@@ -7426,6 +7451,7 @@ a {
 .a-fadeDown {
   opacity: 0;
   animation-name: fadeDownAnime;
+  perspective-origin: left center;
   animation-fill-mode: forwards;
 }
 @keyframes fadeDownAnime {
@@ -7530,7 +7556,7 @@ a {
     transform: translateY(0px) scale(1);
     opacity: 0.9;
   }
-  30% {
+  80% {
     transform: translateY(0px) scale(0.9);
     opacity: 1;
   }
@@ -7652,6 +7678,8 @@ a {
   ------------------------------------------------*/
   /* ---------------------------------
       ファーストビュー > 画像縮小, 拡大
+
+      → _slider.scssに移動
   --------------------------------- */
   /* ---------------------------------------
       鳥の着地または飛び立つ動き
@@ -7659,6 +7687,9 @@ a {
   /* ---------------------------------------
       プルプル動く
   --------------------------------------- */
+}
+.a-fade-blur {
+  overflow: hidden;
 }
 .a-fade-blur img {
   animation: fview-fadeIn 1s both;
@@ -7673,50 +7704,6 @@ a {
     transform: scale(1.05);
     opacity: 1;
     filter: blur(0);
-  }
-}
-.a-fviewOutImg {
-  overflow: hidden;
-  transition: 4s all;
-}
-.a-fviewOutImg img {
-  animation-name: ZoomOut;
-  animation-fill-mode: forwards;
-}
-@keyframes ZoomOut {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(0.85);
-    opacity: 0.85;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-.a-fviewInImg {
-  overflow: hidden;
-  transition: 4s all;
-}
-.a-fviewInImg img {
-  animation-name: ZoomIn;
-  animation-fill-mode: forwards;
-}
-@keyframes ZoomIn {
-  0% {
-    transform: scale(0.85);
-    opacity: 0.85;
-  }
-  50% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0.85);
-    opacity: 0.85;
   }
 }
 .a-bird_l01 {
