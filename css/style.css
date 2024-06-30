@@ -10,7 +10,8 @@ html {
 }
 
 body,
-ul, li {
+ul, li,
+h1, h2, h3, h4, h5, h6, p, a {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -6327,12 +6328,12 @@ a {
 }
 @media (width >= 768px) {
   .c-video {
-    width: 80%;
+    width: 100%;
   }
 }
 @media (width >= 1000px) {
   .c-video {
-    width: 50%;
+    width: 100%;
   }
 }
 .c-video .c-videoWrap {
@@ -6591,6 +6592,12 @@ a {
 }
 .d-menu__link {
   padding: 8% 0 !important;
+}
+
+.c-iframeBox.-insta .c-iframeBox_inner {
+  width: 100%;
+  aspect-ratio: 4/4.5;
+  border: none;
 }
 
 .p-top {

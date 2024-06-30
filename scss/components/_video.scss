@@ -2,10 +2,10 @@
 .c-video{
 	margin: auto;
 	@include min(768){
-		width: 80%;
+		width: 100%;
 	}
 	@include min(1000){
-		width: 50%;
+		width: 100%;
 	}
 	.c-videoWrap{
 		padding-top: 56.25%;
