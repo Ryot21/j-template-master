@@ -389,4 +389,18 @@
 			}
 		}
 	}
+
+	&.-returnBtn{// 戻るボタン
+		a{
+			display: block;
+			width: 20%;
+			border-radius: 5px;
+			overflow: hidden;
+			margin: auto;
+			text-align: center;
+			box-shadow: 1px 1px gray;
+			@include min(768){width: 6%;}
+			@include min(1400){width: 7%;}
+		}
+	}
 }
