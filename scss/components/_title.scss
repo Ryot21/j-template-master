@@ -1,7 +1,14 @@
 
 // コンテンツ_メインタイトル
-.c-contents_title{
+.c-contents_title{// s-L相当
     position: relative;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0 1px;
+    @include min(768){
+        font-size: clamp(1.6rem, 2vw, 2.2rem);
+    }
+
     &::before{
         content: "";
         position: absolute;
@@ -11,8 +18,7 @@
         width: auto;
         font-size: 10px;
         @include min(768) {
-            bottom: -45%;
-            font-size: 12px;
+            bottom: -50%;
         }
     }
 
@@ -75,10 +81,14 @@
 }
 
 // コンテンツ_メインタイトル
-.c-contents_MainTitle{
+.c-contents_MainTitle{// .s-L相当
     position: relative;
-    // font-family: $f-cezanne;
-    .s-LL{padding: 0 1px;}
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0 1px;
+    @include min(768){
+        font-size: clamp(1.6rem, 2vw, 2.2rem);
+    }
 
     // メインタイトル > アイコン
     &.-icon{
