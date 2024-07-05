@@ -6,9 +6,10 @@
     font-weight: bold;
     padding: 0 1px;
     @include min(768){
-        font-size: clamp(1.6rem, 2vw, 2.2rem);
+        font-size: clamp(1.6rem, 2vw, 2.5rem);
     }
 
+    // コンテンツタイトル > 英語表記
     &::before{
         content: "";
         position: absolute;
@@ -21,6 +22,8 @@
             bottom: -50%;
         }
     }
+    &.-row2  {&::before{@include min(768){ bottom: -30%; }}}
+    &.-row2_s{&::before{@include max(768){ bottom: -40%; }}}
 
     // コンテンツタイトル > ボーダーライン
     &.-b-btm{
