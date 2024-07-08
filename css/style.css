@@ -1825,7 +1825,7 @@ span.-block {
 }
 
 .swiper-3d .swiper-wrapper {
-  transform-style: preserve-3d;
+  transform-style: pRESERVEe-3d;
 }
 
 .swiper-3d {
@@ -1833,7 +1833,7 @@ span.-block {
 }
 
 .swiper-3d .swiper-cube-shadow, .swiper-3d .swiper-slide {
-  transform-style: preserve-3d;
+  transform-style: pRESERVEe-3d;
 }
 
 .swiper-css-mode > .swiper-wrapper {
