@@ -190,13 +190,47 @@
     }
 
     // 次に進む・前に戻るボタン
-    .swiper-button-prev,
-    .swiper-button-next{
-        &::after{
-            color: white !important;
-            filter: drop-shadow(1px 1px 3px black);
-            @include min(768){
+    .swiper-button{
+        &-prev,
+        &-next{
+            &::after{
+                color: $main-color--gray !important;
+                // filter: drop-shadow(1px 1px 3px black);
+                @include min(768){
+                }
+            }
+            &.-delta{
+                &::after{
+                    background-repeat: no-repeat;
+                    width: 15px;
+                    height: 15px;
+                    @include min(768){
+                        width: 25px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
 
+        // 三角のボタン
+        &-prev{
+            &.-delta{
+                @include min(768) {left: 30%;}
+                @include min(1000){left: 30%;}
+                &::after{
+                    content: "";
+                    background-image: url(../images/slider/item/SVG/leftBtn.svg);
+                }
+            }
+        }
+        &-next{
+            &.-delta{
+                @include min(768) {right: 30%;}
+                @include min(1000){right: 30%;}
+                &::after{
+                    content: "";
+                    background-image: url(../images/slider/item/SVG/rightBtn.svg);
+                }
             }
         }
     }
