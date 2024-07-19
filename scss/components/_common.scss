@@ -1,10 +1,49 @@
 // 共通
+.w95,.w95s,
+.w90,.w90s,
+.w85,.w85s,
+.w80,.w80s,
+.w50,.w50s,
+.w30,.w30s{
+    &.-right{
+        margin-left: auto;
+        margin-right: 0;
+        &_s{
+            @include max(768){
+                margin-left: auto;
+                margin-right: 0;
+            }
+        }
+    }
+    &.-left{
+        margin-left: 0;
+        margin-right: auto;
+        &_s{
+            @include max(768){
+                margin-left: auto;
+                margin-right: 0;
+            }
+        }
+    }
+}
 
 // 横幅
+.w1280{
+    width: 90% !important;
+    margin: auto;
+    @include min(768) {
+        width: 90%;
+    }
+    @include min(1100){
+        width: 90% !important;
+        max-width: 1280px;
+    }
+}
 .w1100{
-    @include min(768){
-        width: 100%;
-        margin: auto;
+    width: 90% !important;
+    margin: auto;
+    @include min(768) {
+        width: 90%;
     }
     @include min(1100){
         width: 90% !important;
@@ -15,16 +54,28 @@
     width: 100%;
     margin: auto;
 }
-.w98{
-    width: 98%;
-    margin: auto;
-}
 .w95{
     width: 95%;
     margin: auto;
 }
 .w90{
     width: 90%;
+    margin: auto;
+}
+.w85{
+    width: 85%;
+    margin: auto;
+}
+.w80{
+    width: 80%;
+    margin: auto;
+}
+.w50{
+    width: 50%;
+    margin: auto;
+}
+.w30{
+    width: 30% !important;
     margin: auto;
 }
 .w95s{
@@ -36,6 +87,30 @@
 .w90s{
     @include max(768){
         width: 90% !important;
+        margin: auto;
+    }
+}
+.w85s{
+    @include max(768){
+        width: 85% !important;
+        margin: auto;
+    }
+}
+.w80s{
+    @include max(768){
+        width: 80% !important;
+        margin: auto;
+    }
+}
+.w50s{
+    @include max(768){
+        width: 50% !important;
+        margin: auto;
+    }
+}
+.w30s{
+    @include max(768){
+        width: 30% !important;
         margin: auto;
     }
 }

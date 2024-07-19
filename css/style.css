@@ -2737,10 +2737,70 @@ button.swiper-pagination-bullet {
   pointer-events: auto !important;
 }
 
+.w95.-right, .w95s.-right,
+.w90.-right, .w90s.-right,
+.w85.-right, .w85s.-right,
+.w80.-right, .w80s.-right,
+.w50.-right, .w50s.-right,
+.w30.-right, .w30s.-right {
+  margin-left: auto;
+  margin-right: 0;
+}
+@media (768px >= width) {
+  .w95.-right_s, .w95s.-right_s,
+  .w90.-right_s, .w90s.-right_s,
+  .w85.-right_s, .w85s.-right_s,
+  .w80.-right_s, .w80s.-right_s,
+  .w50.-right_s, .w50s.-right_s,
+  .w30.-right_s, .w30s.-right_s {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+.w95.-left, .w95s.-left,
+.w90.-left, .w90s.-left,
+.w85.-left, .w85s.-left,
+.w80.-left, .w80s.-left,
+.w50.-left, .w50s.-left,
+.w30.-left, .w30s.-left {
+  margin-left: 0;
+  margin-right: auto;
+}
+@media (768px >= width) {
+  .w95.-left_s, .w95s.-left_s,
+  .w90.-left_s, .w90s.-left_s,
+  .w85.-left_s, .w85s.-left_s,
+  .w80.-left_s, .w80s.-left_s,
+  .w50.-left_s, .w50s.-left_s,
+  .w30.-left_s, .w30s.-left_s {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.w1280 {
+  width: 90% !important;
+  margin: auto;
+}
+@media (width >= 768px) {
+  .w1280 {
+    width: 90%;
+  }
+}
+@media (width >= 1100px) {
+  .w1280 {
+    width: 90% !important;
+    max-width: 1280px;
+  }
+}
+
+.w1100 {
+  width: 90% !important;
+  margin: auto;
+}
 @media (width >= 768px) {
   .w1100 {
-    width: 100%;
-    margin: auto;
+    width: 90%;
   }
 }
 @media (width >= 1100px) {
@@ -2755,11 +2815,6 @@ button.swiper-pagination-bullet {
   margin: auto;
 }
 
-.w98 {
-  width: 98%;
-  margin: auto;
-}
-
 .w95 {
   width: 95%;
   margin: auto;
@@ -2767,6 +2822,26 @@ button.swiper-pagination-bullet {
 
 .w90 {
   width: 90%;
+  margin: auto;
+}
+
+.w85 {
+  width: 85%;
+  margin: auto;
+}
+
+.w80 {
+  width: 80%;
+  margin: auto;
+}
+
+.w50 {
+  width: 50%;
+  margin: auto;
+}
+
+.w30 {
+  width: 30% !important;
   margin: auto;
 }
 
@@ -2780,6 +2855,34 @@ button.swiper-pagination-bullet {
 @media (768px >= width) {
   .w90s {
     width: 90% !important;
+    margin: auto;
+  }
+}
+
+@media (768px >= width) {
+  .w85s {
+    width: 85% !important;
+    margin: auto;
+  }
+}
+
+@media (768px >= width) {
+  .w80s {
+    width: 80% !important;
+    margin: auto;
+  }
+}
+
+@media (768px >= width) {
+  .w50s {
+    width: 50% !important;
+    margin: auto;
+  }
+}
+
+@media (768px >= width) {
+  .w30s {
+    width: 30% !important;
     margin: auto;
   }
 }
