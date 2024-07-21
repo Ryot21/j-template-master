@@ -355,22 +355,12 @@ h1.s-SS, h2.s-SS, h3.s-SS, h4.s-SS, h5.s-SS, h6.s-SS, p.s-SS, a.s-SS, span.s-SS,
     font-size: clamp(1rem, 2vw, 1.2rem);
   }
 }
-@media (768px >= width) {
-  h1.s-SS.-s12, h2.s-SS.-s12, h3.s-SS.-s12, h4.s-SS.-s12, h5.s-SS.-s12, h6.s-SS.-s12, p.s-SS.-s12, a.s-SS.-s12, span.s-SS.-s12, label.s-SS.-s12, button.s-SS.-s12 {
-    font-size: 1.2rem;
-  }
-}
 h1.s-S, h2.s-S, h3.s-S, h4.s-S, h5.s-S, h6.s-S, p.s-S, a.s-S, span.s-S, label.s-S, button.s-S {
   font-size: 1.1rem;
 }
 @media (width >= 768px) {
   h1.s-S, h2.s-S, h3.s-S, h4.s-S, h5.s-S, h6.s-S, p.s-S, a.s-S, span.s-S, label.s-S, button.s-S {
     font-size: clamp(1rem, 1.2vw, 1.5rem);
-  }
-}
-@media (768px >= width) {
-  h1.s-S.-s12, h2.s-S.-s12, h3.s-S.-s12, h4.s-S.-s12, h5.s-S.-s12, h6.s-S.-s12, p.s-S.-s12, a.s-S.-s12, span.s-S.-s12, label.s-S.-s12, button.s-S.-s12 {
-    font-size: 1.2rem;
   }
 }
 h1.s-M, h2.s-M, h3.s-M, h4.s-M, h5.s-M, h6.s-M, p.s-M, a.s-M, span.s-M, label.s-M, button.s-M {
@@ -381,27 +371,12 @@ h1.s-M, h2.s-M, h3.s-M, h4.s-M, h5.s-M, h6.s-M, p.s-M, a.s-M, span.s-M, label.s-
     font-size: clamp(1.2rem, 1.5vw, 1.6rem);
   }
 }
-@media (768px >= width) {
-  h1.s-M.-s10, h2.s-M.-s10, h3.s-M.-s10, h4.s-M.-s10, h5.s-M.-s10, h6.s-M.-s10, p.s-M.-s10, a.s-M.-s10, span.s-M.-s10, label.s-M.-s10, button.s-M.-s10 {
-    font-size: 1rem;
-  }
-}
-@media (768px >= width) {
-  h1.s-M.-s16, h2.s-M.-s16, h3.s-M.-s16, h4.s-M.-s16, h5.s-M.-s16, h6.s-M.-s16, p.s-M.-s16, a.s-M.-s16, span.s-M.-s16, label.s-M.-s16, button.s-M.-s16 {
-    font-size: 1.6rem;
-  }
-}
 h1.s-ML, h2.s-ML, h3.s-ML, h4.s-ML, h5.s-ML, h6.s-ML, p.s-ML, a.s-ML, span.s-ML, label.s-ML, button.s-ML {
   font-size: 1.6rem;
 }
 @media (width >= 768px) {
   h1.s-ML, h2.s-ML, h3.s-ML, h4.s-ML, h5.s-ML, h6.s-ML, p.s-ML, a.s-ML, span.s-ML, label.s-ML, button.s-ML {
     font-size: clamp(1.6rem, 2vw, 2rem);
-  }
-}
-@media (768px >= width) {
-  h1.s-ML.-s14, h2.s-ML.-s14, h3.s-ML.-s14, h4.s-ML.-s14, h5.s-ML.-s14, h6.s-ML.-s14, p.s-ML.-s14, a.s-ML.-s14, span.s-ML.-s14, label.s-ML.-s14, button.s-ML.-s14 {
-    font-size: 1.4rem;
   }
 }
 h1.s-L, h2.s-L, h3.s-L, h4.s-L, h5.s-L, h6.s-L, p.s-L, a.s-L, span.s-L, label.s-L, button.s-L {
@@ -412,16 +387,6 @@ h1.s-L, h2.s-L, h3.s-L, h4.s-L, h5.s-L, h6.s-L, p.s-L, a.s-L, span.s-L, label.s-
     font-size: clamp(1.6rem, 2vw, 2.2rem);
   }
 }
-@media (768px >= width) {
-  h1.s-L.-s12, h2.s-L.-s12, h3.s-L.-s12, h4.s-L.-s12, h5.s-L.-s12, h6.s-L.-s12, p.s-L.-s12, a.s-L.-s12, span.s-L.-s12, label.s-L.-s12, button.s-L.-s12 {
-    font-size: 1.2rem;
-  }
-}
-@media (768px >= width) {
-  h1.s-L.-s14, h2.s-L.-s14, h3.s-L.-s14, h4.s-L.-s14, h5.s-L.-s14, h6.s-L.-s14, p.s-L.-s14, a.s-L.-s14, span.s-L.-s14, label.s-L.-s14, button.s-L.-s14 {
-    font-size: 1.4rem;
-  }
-}
 h1.s-LL, h2.s-LL, h3.s-LL, h4.s-LL, h5.s-LL, h6.s-LL, p.s-LL, a.s-LL, span.s-LL, label.s-LL, button.s-LL {
   font-size: 2.1rem;
 }
@@ -430,27 +395,12 @@ h1.s-LL, h2.s-LL, h3.s-LL, h4.s-LL, h5.s-LL, h6.s-LL, p.s-LL, a.s-LL, span.s-LL,
     font-size: clamp(1.8rem, 3vw, 3rem);
   }
 }
-@media (768px >= width) {
-  h1.s-LL.-s16, h2.s-LL.-s16, h3.s-LL.-s16, h4.s-LL.-s16, h5.s-LL.-s16, h6.s-LL.-s16, p.s-LL.-s16, a.s-LL.-s16, span.s-LL.-s16, label.s-LL.-s16, button.s-LL.-s16 {
-    font-size: 1.6rem;
-  }
-}
 h1.s-3L, h2.s-3L, h3.s-3L, h4.s-3L, h5.s-3L, h6.s-3L, p.s-3L, a.s-3L, span.s-3L, label.s-3L, button.s-3L {
   font-size: 2.8rem;
 }
 @media (width >= 768px) {
   h1.s-3L, h2.s-3L, h3.s-3L, h4.s-3L, h5.s-3L, h6.s-3L, p.s-3L, a.s-3L, span.s-3L, label.s-3L, button.s-3L {
     font-size: clamp(2.1rem, 3vw, 4.8rem);
-  }
-}
-@media (768px >= width) {
-  h1.s-3L.-s16, h2.s-3L.-s16, h3.s-3L.-s16, h4.s-3L.-s16, h5.s-3L.-s16, h6.s-3L.-s16, p.s-3L.-s16, a.s-3L.-s16, span.s-3L.-s16, label.s-3L.-s16, button.s-3L.-s16 {
-    font-size: 1.6rem;
-  }
-}
-@media (768px >= width) {
-  h1.s-3L.-s18, h2.s-3L.-s18, h3.s-3L.-s18, h4.s-3L.-s18, h5.s-3L.-s18, h6.s-3L.-s18, p.s-3L.-s18, a.s-3L.-s18, span.s-3L.-s18, label.s-3L.-s18, button.s-3L.-s18 {
-    font-size: 1.8rem;
   }
 }
 h1.s-kome, h2.s-kome, h3.s-kome, h4.s-kome, h5.s-kome, h6.s-kome, p.s-kome, a.s-kome, span.s-kome, label.s-kome, button.s-kome {
@@ -492,6 +442,31 @@ h1.s-profile, h2.s-profile, h3.s-profile, h4.s-profile, h5.s-profile, h6.s-profi
 @media (width >= 768px) {
   h1.-s-nav.s-L, h2.-s-nav.s-L, h3.-s-nav.s-L, h4.-s-nav.s-L, h5.-s-nav.s-L, h6.-s-nav.s-L, p.-s-nav.s-L, a.-s-nav.s-L, span.-s-nav.s-L, label.-s-nav.s-L, button.-s-nav.s-L {
     font-size: clamp(1.6rem, 1.8vw, 1.8rem) !important;
+  }
+}
+@media (768px >= width) {
+  h1.-s10, h2.-s10, h3.-s10, h4.-s10, h5.-s10, h6.-s10, p.-s10, a.-s10, span.-s10, label.-s10, button.-s10 {
+    font-size: 1rem;
+  }
+}
+@media (768px >= width) {
+  h1.-s12, h2.-s12, h3.-s12, h4.-s12, h5.-s12, h6.-s12, p.-s12, a.-s12, span.-s12, label.-s12, button.-s12 {
+    font-size: 1.2rem;
+  }
+}
+@media (768px >= width) {
+  h1.-s14, h2.-s14, h3.-s14, h4.-s14, h5.-s14, h6.-s14, p.-s14, a.-s14, span.-s14, label.-s14, button.-s14 {
+    font-size: 1.4rem;
+  }
+}
+@media (768px >= width) {
+  h1.-s16, h2.-s16, h3.-s16, h4.-s16, h5.-s16, h6.-s16, p.-s16, a.-s16, span.-s16, label.-s16, button.-s16 {
+    font-size: 1.6rem;
+  }
+}
+@media (768px >= width) {
+  h1.-s18, h2.-s18, h3.-s18, h4.-s18, h5.-s18, h6.-s18, p.-s18, a.-s18, span.-s18, label.-s18, button.-s18 {
+    font-size: 1.8rem;
   }
 }
 
